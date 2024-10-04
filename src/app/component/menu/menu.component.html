@@ -1,0 +1,20 @@
+<div class="movie-grid">
+    <div class="movie-card" *ngFor="let movie of movies">
+      <div class="card-inner">
+        <!-- Parte frontal de la card -->
+        <div class="card-front">
+          <img [src]="movie.imageUrl" alt="{{movie.title}}" class="movie-poster">
+          <h3>{{ movie.title }}</h3>
+          <p>Calificación: {{ movie.rating }}</p>
+          <p>Año de estreno: {{ movie.year }}</p>
+          <p>Duración: {{ movie.duration }}</p>
+        </div>
+        <!-- Parte trasera de la card -->
+        <div class="card-back">
+          <h3>{{ movie.title }}</h3>
+          <p>{{ movie.summary }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
