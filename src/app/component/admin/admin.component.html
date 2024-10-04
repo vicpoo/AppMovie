@@ -1,0 +1,33 @@
+<div class="admin-container">
+    <h2>Administrar Películas</h2>
+  
+    <form [formGroup]="movieForm" (ngSubmit)="onSubmit()" class="movie-form">
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" formControlName="nombre" required>
+      </div>
+      <div>
+        <label for="calificacion">Calificación:</label>
+        <input id="calificacion" type="number" formControlName="calificacion" required>
+      </div>
+      <div>
+        <label for="duracion">Duración:</label>
+        <input id="duracion" type="number" formControlName="duracion" required>
+      </div>
+      <div>
+        <label for="resumen">Resumen:</label>
+        <textarea id="resumen" formControlName="resumen" required></textarea>
+      </div>
+      <button type="submit">{{ editMode ? 'Actualizar' : 'Agregar' }}</button>
+    </form>
+  
+    <h3>Lista de Películas</h3>
+    <ul class="movie-list">
+      <li *ngFor="let movie of movies" class="movie-item">
+        {{ movie.nombre }} - {{ movie.calificacion }} - {{ movie.duracion }}
+        <button (click)="editMovie(movie)">Editar</button>
+        <button (click)="deleteMovie(movie.id)">Eliminar</button>
+      </li>
+    </ul>
+  </div>
+  
