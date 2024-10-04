@@ -1,0 +1,13 @@
+<div class="movie-container">
+    <div *ngFor="let movie of movies" class="movie-card">
+      <div class="movie-front">
+        <h2>{{ movie.nombre }}</h2>
+        <p>Rating: {{ movie.calificacion }}</p>
+        <p>Duration: {{ movie.duracion }}</p>
+      </div>
+      <div class="movie-back">
+        <p>{{ movie.resumen }}</p>
+      </div>
+    </div>
+  </div>
+  
