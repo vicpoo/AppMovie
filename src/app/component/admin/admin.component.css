@@ -35,7 +35,6 @@
   background-color: #333;
 }
 
-/* Estilo para el contenedor administrativo */
 .admin-container {
   max-width: 600px;
   margin: 20px auto;
@@ -64,20 +63,20 @@ h2, h3 {
 .movie-form label {
   font-weight: bold;
   margin-bottom: 5px;
-  color: #555; /* Color de texto más suave */
+  color: #555; 
 }
 
 .movie-form input, .movie-form textarea {
-  padding: 12px; /* Aumenta el padding para un mejor toque */
-  border: 1px solid #ddd; /* Color de borde más claro */
+  padding: 12px; 
+  border: 1px solid #ddd; 
   border-radius: 6px;
-  transition: border-color 0.3s; /* Añade una transición suave */
+  transition: border-color 0.3s; 
 }
 
 .movie-form input:focus, 
 .movie-form textarea:focus {
-  border-color: #007bff; /* Color del borde al enfocar */
-  outline: none; /* Elimina el contorno predeterminado */
+  border-color: #007bff; 
+  outline: none; 
 }
 
 .movie-form button {
@@ -87,48 +86,48 @@ h2, h3 {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 16px; /* Aumenta el tamaño de la fuente */
-  transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+  font-size: 16px; 
+  transition: background-color 0.3s, transform 0.2s; 
 }
 
 .movie-form button:hover {
   background-color: #0056b3;
-  transform: translateY(-2px); /* Sube un poco al pasar el mouse */
+  transform: translateY(-2px); 
 }
 
 .movie-list {
   list-style-type: none;
   padding: 0;
-  margin-top: 20px; /* Espacio entre el formulario y la lista */
+  margin-top: 20px; 
 }
 
 .movie-item {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  margin: 10px 0; /* Espacio entre los ítems */
+  margin: 10px 0; 
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 6px;
-  transition: box-shadow 0.3s; /* Transición suave para sombra */
+  transition: box-shadow 0.3s; 
 }
 
 .movie-item:hover {
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); /* Sombra al pasar el mouse */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); 
 }
 
 .movie-item button {
   margin-left: 10px;
   background-color: #dc3545;
-  padding: 8px 12px; /* Ajuste de padding para los botones de eliminar */
+  padding: 8px 12px; 
   border-radius: 6px;
   border: none;
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+  transition: background-color 0.3s, transform 0.2s; 
 }
 
 .movie-item button:hover {
   background-color: #c82333;
-  transform: translateY(-2px); /* Sube un poco al pasar el mouse */
+  transform: translateY(-2px); 
 }

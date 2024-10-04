@@ -1,7 +1,7 @@
 .movie-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px 30px; /* 50px para las filas, 30px para las columnas */
+  gap: 50px 30px; 
   padding: 20px 60px; 
   background-color: #00145A; 
   height: auto;
@@ -16,11 +16,11 @@
 
 .card-inner {
   position: relative;
-  width: 220px; /* Agrandar la tarjeta */
-  height: 320px; /* Agrandar la tarjeta */
+  width: 220px; 
+  height: 320px; 
   transform-style: preserve-3d;
   transition: transform 0.6s;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Agregar sombra para profundidad */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
 }
 
 .movie-card:hover .card-inner {
@@ -32,10 +32,10 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border: 1px solid #000; /* Cambiar borde a negro */
-  padding: 15px; /* Aumentar un poco el padding */
+  border: 1px solid #000; 
+  padding: 15px; 
   color: white;
-  background-color: #0A0A0A; /* Oscurecer un poco más el fondo */
+  background-color: #0A0A0A; 
   border-radius: 10px;
 }
 
@@ -45,7 +45,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Distribuir el contenido de manera más uniforme */
+  justify-content: space-between; 
 }
 
 .card-back {
@@ -55,30 +55,28 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #111; /* Oscurecer el fondo trasero */
+  background-color: #111; 
 }
 
 .movie-poster {
   width: 100%;
-  height: 180px; /* Aumentar tamaño de la imagen para ajustarla a la nueva tarjeta */
+  height: 180px; 
   border-radius: 10px;
   object-fit: cover;
 }
 
-/* Títulos y párrafos */
 .card-front h3, .card-back h3 {
-  font-size: 1.1rem; /* Aumentar tamaño del título */
+  font-size: 1.1rem; 
   margin: 5px 0;
   text-align: center;
 }
 
 .card-front p, .card-back p {
-  font-size: 0.9rem; /* Ajustar el tamaño de los párrafos */
+  font-size: 0.9rem; 
   margin: 5px 0;
   text-align: center;
 }
 
-/* Efecto hover suave */
 .movie-card:hover {
-  transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+  transform: scale(1.05); 
 }

@@ -1,63 +1,63 @@
 .movie-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centra las tarjetas */
+    justify-content: center; 
     padding: 20px;
-    gap: 20px; /* Espacio entre las tarjetas */
+    gap: 20px; 
     background-color: #00145A; 
   }
   
 
   .movie-card {
-    background-color: #282c34; /* Fondo oscuro para las tarjetas */
-    color: white; /* Color del texto */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
-    overflow: hidden; /* Asegura que el contenido no desborde */
-    transition: transform 0.3s ease; /* Animación de transformación */
-    width: 200px; /* Ancho fijo */
-    position: relative; /* Para posicionar elementos internos */
+    background-color: #282c34; 
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+    width: 200px; 
+    position: relative; 
   }
   
   .movie-card:hover {
-    transform: scale(1.05); /* Escala al pasar el ratón */
+    transform: scale(1.05); 
   }
   
   .movie-front,
   .movie-back {
-    padding: 15px; /* Espaciado interno */
+    padding: 15px;
   }
   
   .movie-front {
-    background-color: #3c3f44; /* Color de fondo para la parte frontal */
-    transition: opacity 0.5s ease; /* Transición suave */
+    background-color: #3c3f44; 
+    transition: opacity 0.5s ease; 
   }
   
   .movie-back {
-    background-color: #4c4f54; /* Color de fondo para la parte trasera */
-    position: absolute; /* Para superponer el contenido */
+    background-color: #4c4f54; 
+    position: absolute; 
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0; /* Comienza invisible */
-    color: #f0f0f0; /* Color de texto más claro */
+    opacity: 0; 
+    color: #f0f0f0; 
     padding: 15px;
     display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
-    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; 
+    justify-content: center; 
   }
   
   .movie-card:hover .movie-back {
-    opacity: 1; /* Muestra la parte trasera al pasar el ratón */
+    opacity: 1;
   }
   
   h2 {
-    font-size: 1.5em; /* Tamaño del título */
-    margin: 0 0 10px 0; /* Margen inferior */
+    font-size: 1.5em; 
+    margin: 0 0 10px 0; 
   }
   
   p {
-    margin: 5px 0; /* Margen entre párrafos */
+    margin: 5px 0;
   }
   
